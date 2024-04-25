@@ -57,13 +57,13 @@ section.menu {
     width: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 10px;
 
     /*Sección Menu Header*/
 
     .menu__header {
         display: inline-flex;
-        flex-flow: wrap;
+        flex-flow: row nowrap;
         align-items: center;
         gap: 8px;
         font-weight: 700;
@@ -80,7 +80,7 @@ section.menu {
     }
 
     .menu__list__item__contato {
-        font-size: 14px;
+        font-size: 12px;
     }
     
 }
@@ -121,11 +121,12 @@ section.title {
         
             .title__network {
                 display: flex;
+                flex-flow: row nowrap;
                 justify-content: space-around;
                 gap: 8px;
         
                 .title__network__item {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 600;
                 }
             }
@@ -187,14 +188,14 @@ section.skills {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        gap: 16px;
+        gap: 1%;
 
         .skills__box ul{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            height: 100px;
-            width: 150px;
+            height: 80px;
+            width: 100px;
             padding: 16px;
             gap: 8px;
             background-color: #FFFFFF;
@@ -207,9 +208,8 @@ section.skills {
             }
         
             .skills__name {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 700;
-                line-height: 19px;
             }
         }
     }
@@ -235,14 +235,14 @@ section.hobbies{
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        gap: 16px;
+        gap: 1%;
 
         .hobbies__box ul{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            height: 100px;
-            width: 150px;
+            height: 80px;
+            width: 100px;
             padding: 16px;
             gap: 8px;
             background-color: #FFFFFF;
@@ -255,7 +255,7 @@ section.hobbies{
             }
         
             .hobbies__name {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 700;
                 line-height: 19px;
             }
@@ -302,7 +302,7 @@ section.academic{
                 .academic__courses__item__img {
                     display: flex;
                     height: 120px;
-                    width: 300px;
+                    width: 250px;
                     justify-content: center;
                     align-items: center;
                     padding: 16px;
@@ -414,7 +414,7 @@ section.experience{
 
 section.formcontato{
     display: flex;
-    padding: 32px;
+    padding: 32px 15px;
     gap: 10px;
     background-color: #EAF2FD;
 
@@ -452,10 +452,10 @@ section.formcontato{
         .formcontato__form{
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 25px;
 
             .formcontato__input {
-                width: 300px;
+                width: 80vw;
                 height: 55px;
                 border-radius: 4px;
                 border: 0;
@@ -476,7 +476,7 @@ section.formcontato{
             }
 
             .formcontato__textarea {
-                width: 300px;
+                width: 80vw;
                 height: 130px;
                 padding: 16px;
                 border-radius: 4px;
@@ -493,8 +493,8 @@ section.formcontato{
             }
 
             .formcontato__botao {
-                width: 130px;
-                height: 40px;
+                width: 140px;
+                height: 50px;
                 padding: 12px 16px;
                 border: 0;
                 background-color: #2A7AE4;
@@ -512,7 +512,20 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer__rodape {
+    display: flex;
+    height: 80px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    }
+
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
