@@ -1,0 +1,283 @@
+/*Sección Menu*/
+
+section.menu {
+    height: 56px;
+    width: auto;
+    padding: 10px;
+
+    /*Sección Menu Header*/
+
+    .menu__header {
+        display: inline-flex;
+        gap: 8px;
+    }
+
+    .menu__header img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .menu__list {
+        display: none;
+    }
+}
+
+/*Sección Title*/
+
+section.title {
+    padding: 16px;
+    gap: 16px;
+
+    .title__div {
+        gap: 16px;
+
+        .title__profile {
+            height: 98px;
+            width: 98px;
+            border-radius: 40%;
+        }
+    
+        .title__container {
+            gap: 16px;
+    
+            .title__bio {
+                line-height: 26px;
+            }
+        
+            .title__subsection {
+                line-height: 16px;
+            }
+        
+            .title__network {
+                gap: 8px;
+            }
+        }
+    }
+}
+
+/*Sección About*/
+
+section.about {
+    padding: 16px;
+    gap: 10px;
+    background-color: #EAF2FD;
+
+    .about__container {
+        gap: 16px;
+    
+        .about__paragraph {
+            line-height: 16px;
+        }
+    
+        .about__title img {
+            height: 52px;
+            width: 140px;
+        }
+    }
+}
+
+/*Sección Skills*/ /*Sección Hobbies*/
+
+section.skills, section.hobbies {
+    padding: 16px;
+    gap: 32px;
+
+    .skills__line, .hobbies__line {
+        width: 100%;
+        gap: 1%;
+
+        .skills__box ul, .hobbies__box ul {
+            justify-content: flex-end;
+            height: 80px;
+            width: 100px;
+            padding: 16px;
+            gap: 8px;
+            background-color: #FFFFFF;
+            border-radius: 5%;
+            margin: 10px 5px;
+    
+            .skills__img img,.hobbies__img img {
+                height: 40px;
+                width: 40px;
+            }
+        
+            .skills__name, .hobbies__name {
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+/* Experiencia Académica*/
+
+section.academic {
+    padding: 32px;
+    gap: 32px;
+    background-color: #EAF2FD;
+
+    .academic__courses {
+        height: auto;
+        gap: 16px;
+
+        .academic__courses__box {
+            width: 210px;
+            gap: 8px;
+    
+            .academic__courses__list {
+                align-items: flex-start;
+                gap: 8px;
+        
+                .academic__courses__item__img {
+                    height: 120px;
+                    width: 170px;
+                    padding: 16px;
+                    gap: 10px;
+                    background-color: #FFFFFF;
+                    border-radius: 10px;
+                }
+            
+                .academic__courses__item__img img {
+                    height: 60px;
+                    width: 85px;
+                }
+            }
+        }
+    }
+}
+
+/* experiencia*/
+
+section.experience {
+    padding: 16px;
+    gap: 32px;
+
+    .experience__box {
+        gap: 16px;
+    }
+
+    .experience__img {
+        height: 180px;
+        width: 300px;
+    }
+
+    .experience__info-container {
+        gap: 8px;
+    
+        .experience__text {
+            line-height: 16px;
+        }
+    
+        .experience__description {
+            gap: 16px;
+
+            .experience__button button {
+                width: 110px;
+                height: 40px;
+                padding: 12px 16px;
+                gap: 10px;
+                opacity: 0px;
+            }
+    
+            .experience__repo button {
+                border: 1px solid #2A7AE4;
+                color: #2A7AE4;
+            }
+        
+            .experience__demo button {
+                border: 0;
+                background-color: #2A7AE4;
+                color: #FFFFFF;
+            }   
+        }   
+    }
+}
+
+/*Contacto*/
+
+section.formcontato {
+    width: 100%;
+    padding: 32px 1px;
+    gap: 10px;
+    background-color: #EAF2FD;
+
+    .formcontato__contacto {
+        gap: 10px;
+    }
+
+    .formcontato--esquerda {
+        gap: 32px;
+    }
+
+    .formcontato__img {
+        display: none;
+    }
+
+    .formcontato__text {
+        width: 100%;
+        gap: 12px;
+
+        .formcontato__title {
+            margin-left: 12px;
+        }
+
+        .formcontato__subtext {
+            line-height: 19px;
+            margin-left: 8px;
+        }
+
+        .formcontato__form {
+            width: 100%;
+            gap: 25px;
+
+            .formcontato__input, .formcontato__textarea {
+                border-radius: 4px;
+                border: 0;
+                border-bottom: 2px solid #C8C8C8;
+                background-color: #FFFFFF;
+                padding: 0 8px;
+                outline: 0;
+            }
+
+            .formcontato__input {
+                width: 90%;
+                height: 55px;
+            }
+
+            .formcontato__textarea {
+                width: 87.5%;
+                height: 130px;
+                padding: 16px;
+                resize: none;
+            }
+
+            .formcontato__input:focus, .formcontato__textarea:focus {
+                border-bottom: 2px solid #2A7AE4;
+            }
+
+            .formcontato__input::placeholder, .formcontato__textarea::placeholder {
+                color: #A2A2A2;
+                line-height: 20px;
+            }
+
+            .formcontato__botao {
+                width: 140px;
+                height: 50px;
+                padding: 12px 16px;
+                border: 0;
+                background-color: #2A7AE4;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+/*footeer*/
+
+section.footer{
+
+    .footer__rodape {
+    height: 40px;
+    padding: 16px;
+    gap: 10px;
+    }
+}

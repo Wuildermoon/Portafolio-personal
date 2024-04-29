@@ -1,0 +1,111 @@
+/* Menú */
+
+section.menu {
+    padding: 16px 32px;
+
+    /*Sección Menu Header*/
+
+    .menu__list__item__contato {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+/*title*/
+
+section.title {
+    padding: 32px;
+    gap: 32px;
+
+    .title__div {
+        flex-direction: row;
+        gap: 16px;
+
+        .title__profile {
+            height: 146px;
+            width: 146px;
+            order: 2;
+        }
+    
+        .title__container {
+            gap: 8px;
+        
+            .title__network {
+                gap: 32px;
+        
+                .title__network__item {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .title__network__item img {
+                    height: 10px;
+                    width: 10px;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+/*Sección About*/
+
+section.about {
+    padding: 32px;
+}
+
+/*Skills*/
+
+section.skills {
+    padding: 32px;
+
+    .skills__line {
+        justify-content: flex-start;
+        gap: 32px;
+
+        .skills__box ul{
+            height: 80px;
+            width: 120px;
+            margin: 0;
+        }
+    }
+}
+
+/*Hobbies*/
+
+section.hobbies{
+    padding: 32px;
+
+    .hobbies__line {
+        justify-content: flex-start;
+        gap: 32px;
+
+        .hobbies__box ul{
+            height: 80px;
+            width: 120px;
+            margin: 0;
+        }
+    }
+}
+
+/*Formación Académica*/
+
+section.academic{
+    gap: 22px;
+
+    .academic__courses {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+}
+
+/*Experiencia Profesional*/
+
+section.experience{
+    padding: 32px;
+
+    .experience__img {
+        height: 370px;
+        width: 650px;
+    }
+}
