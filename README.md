@@ -2,7 +2,7 @@
 
 ---
 
-### Estado: Concluido
+### Estado: Terminado
 
 ---
 

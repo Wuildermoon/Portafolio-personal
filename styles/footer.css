@@ -1,0 +1,30 @@
+/* Mobile */
+
+section.footer{
+
+    .footer__rodape {
+    height: 80px;
+    padding: 16px;
+    gap: 10px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+
+    
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+    section.footer{
+
+        .footer__rodape {
+        padding: 64px;
+        font-size: 16px;
+        }
+    }
+}

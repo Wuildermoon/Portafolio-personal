@@ -1,0 +1,51 @@
+/* Mobile */
+
+section.about {
+    padding: 16px;
+    gap: 10px;
+    background-color: #EAF2FD;
+
+    .about__container {
+        gap: 16px;
+    
+        .about__paragraph {
+            line-height: 16px;
+        }
+    
+        .about__title img {
+            height: 52px;
+            width: 140px;
+        }
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+
+    section.about {
+        padding: 32px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+    section.about {
+        padding: 32px;
+        gap: 16px;
+
+        .about__container {
+
+            .about__title {
+                font-size: 32px;
+            }
+        
+            .about__paragraph {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}

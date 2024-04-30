@@ -1,4 +1,15 @@
-/* Estilos Generales del documento*/
+/* Estilos del documento*/
+
+@import url(styles/reset.css);
+@import url(styles/menu.css);
+@import url(styles/tittle.css);
+@import url(styles/about.css);
+@import url(styles/skills.css);
+@import url(styles/hobbies.css);
+@import url(styles/academic.css);
+@import url(styles/experience.css);
+@import url(styles/contact.css);
+@import url(styles/footer.css);
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
@@ -9,31 +20,29 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     background-color: var(--color-de-fondo);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
-}
-ol, ul,li {
-    list-style: none;
+    color: var(--color-de-fuente);
 }
 a {
     text-decoration: none;
     color: var(--color-de-link);
 }
-h1, h2, h3, h4, p {
-    color: var(--color-de-fuente);
-}
 button {
-    color: var(--color-de-fuente);
     cursor: pointer;
 }
 
 /* Display */
 
 section.menu,
+.menu__header,
 section.title,
 .title__div,
 .title__container,
@@ -80,8 +89,11 @@ section.footer,
     justify-content: center;
 }
 
-section.menu,
 .title__network {
+    justify-content: flex-start;
+}
+
+section.menu {
     justify-content: space-between;
 }
 
@@ -94,6 +106,7 @@ section.menu,
 /* Align-items */
 
 section.menu,
+.menu__header,
 section.skills,
 section.hobbies,
 .skills__line,
@@ -101,6 +114,7 @@ section.hobbies,
 section.academic,
 .academic__courses,
 .academic__courses__box,
+.academic__courses__list,
 .academic__courses__item__img,
 section.experience,
 section.formcontato,
@@ -145,13 +159,13 @@ section.experience,
 /* Flex-wrap */
 
 .menu__header,
-.title__network {
+.title__network,
+.footer__rodape {
     flex-wrap: nowrap;
 }
 
 .skills__line,
-.hobbies__line,
-.footer__rodape {
+.hobbies__line {
     flex-wrap: wrap;
 }
 
