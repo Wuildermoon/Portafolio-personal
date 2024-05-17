@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function validateForm() {
         // Obtén los valores de los campos del formulario
         //.trim() eliminar cualquier espacio en blanco al principio y al final del valor
-        const nombre = form.nombre.value.trim(); 
+        const name = form.name.value.trim(); 
         const email = form.email.value.trim();
-        const asunto = form.asunto.value.trim();
-        const mensaje = form.mensaje.value.trim();
+        const subject = form.subject.value.trim();
+        const message = form.message.value.trim();
 
         // Verifica si algún campo está vacío
-        if (nombre === '' || email === '' || asunto === '' || mensaje === '') {
+        if (name === '' || email === '' || subject === '' || message === '') {
             alert('Por favor, completa todos los campos del formulario.');
             return false;
         }
