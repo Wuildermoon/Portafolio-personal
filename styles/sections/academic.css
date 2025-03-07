@@ -1,0 +1,125 @@
+#academic {
+  .academic__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+
+    .academic__list__item {
+      height: fit-content;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 8px;
+      padding: 1rem;
+      background-color: var(--card-color-base);
+      border-radius: 1rem;
+      transition: all 0.2s ease-in-out;
+
+      .academic__item__img {
+        width: 100%;
+        max-height: max-content;
+        max-width: 100%;
+        min-width: 5rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 0.5rem;
+      }
+
+      .academic__item__title {
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .academic__item__description {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        inset: 1rem;
+        margin: auto;
+        opacity: 0;
+        visibility: hidden;
+        scale: 0;
+        padding: 1rem;
+
+        .academic__item__subtitle {
+          font-size: 1.2rem;
+          font-weight: 700;
+          line-height: 1.25rem;
+          margin-bottom: 0.25rem;
+        }
+
+        .academic__item__place {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+
+        .academic__item__date {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+      }
+
+      .academic__item__img,
+      .academic__item__title,
+      .academic__item__description {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .academic__list__item:nth-child(2) {
+      .academic__item__img {
+        aspect-ratio: 19 / 13;
+      }
+    }
+
+    .academic__list__item:hover,
+    .academic__list__item:focus {
+      background-color: var(--card-color-hover);
+
+      .academic__item__img,
+      .academic__item__title {
+        opacity: 0;
+        scale: 0;
+        visibility: hidden;
+      }
+
+      .academic__item__description {
+        opacity: 1;
+        scale: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media (width > 768px) {
+  #academic {
+    .academic__list {
+      .academic__list__item {
+        .academic__item__img {
+          width: auto;
+          height: 10rem;
+        }
+
+        .academic__item__description {
+          .academic__item__subtitle {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

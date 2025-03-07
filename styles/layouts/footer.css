@@ -1,0 +1,18 @@
+.footer {
+  grid-area: footer;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+
+  .footer__text {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    .footer__text {
+      font-size: 1rem;
+    }
+  }
+}

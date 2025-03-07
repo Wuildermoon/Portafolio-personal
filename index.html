@@ -1,239 +1,438 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+      content="Portafolio de Wuilderman Berrios, desarrollador Front-End, estudiante de programación">
+    <meta name="keywords"
+      content="Wuilderman Berrios, Portafolio, Front-End, Desarrollo Web, Programación, HTML, CSS, Javascript, React, Alura">
+    <meta name="author" content="Wuilderman David Berrios Cárdenas">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Wuilderman Berrios - Portafolio personal</title>
+
+    <meta property="og:title"
+      content="Wuilderman Berrios - Portafolio personal">
+    <meta property="og:description"
+      content="Portafolio de Wuilderman Berrios, desarrollador Front-End, estudiante de programación">
+    <!-- <meta property="og:image" content="https://www.example.com/image.jpg"> -->
+    <!-- <meta property="og:image:alt" content="Texto alternativo de la imagen"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+      content="https://wuildermoon.github.io/Portafolio-personal/">
+
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Mi Portafolio</title>
-</head>
-<body>
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Wuilderman Berrios</h3>
-        </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">wuilderman2000@gmail.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">wuilderman2000@gmail.com</a></li>
-        </nav>
-    </section>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <header class="header__header">
+        <img src="assets/img/vector.png">
+        <h1>Portafolio personal</h1>
+      </header>
 
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets/profile.jpg">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Wuilderman Berrios y soy estudiante Front-End</h2>
-                <h3 class="title__subsection">Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/Wuildermoon" target="_blank">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/wuilderman-berrios-080813299" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.facebook.com/profile.php?id=100005545068553" target="_blank">Facebook <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/wuilder_berrios/" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
-                    <!-- <li class="title__network__item"><a href="" target="_blank">Currículo <img src="assets\arrow.png"></a></li> -->
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
+      <ul class="header__networks">
+        <li class="header__networks__item">
+          <a href="https://github.com/Wuildermoon" target="_blank">
+            <p>Github</p>
+            <img title="Github" src="/assets/icons/github-logos/github-mark.svg"
+              alt="Perfil de Github">
+          </a>
+        </li>
+        <li class="header__networks__item">
+          <a href="https://www.linkedin.com/in/wuilderman-berrios-080813299"
+            target="_blank">
+            <p>LinkedIn</p>
+            <img title="LinkedIn"
+              src="assets/icons/linkedin-logos/LI-In-Bug.png"
+              alt="Perfil de LinkedIn">
+          </a>
+        </li>
+        <!-- <li class="header__networks__item">
+          <a href="https://www.facebook.com/profile.php?id=100005545068553" target="_blank">
+            <p>Facebook</p>
+            <img title="Facebook" src="assets/icons/facebook-logos/Logo/Primary Logo/Facebook_Logo_Primary.png" alt="Perfil de Facebook">
+          </a>
+        </li> -->
+        <li class="header__networks__item">
+          <a href="https://www.instagram.com/wuilder_berrios/" target="_blank">
+            <p>Instagram</p>
+            <img title="Instagram"
+              src="assets/icons/instagram-logos/01 Gradient Glyph/Instagram_Glyph_Gradient.svg"
+              alt="Perfil de Instragram">
+          </a>
+        </li>
+        <li class="header__networks__item">
+          <a href="assets/pdf/CV-WUILDERMAN-BERRIOS.docx.pdf" target="_blank">
+            <p>Currículo</p>
+            <img title="Curriculo"
+              src="assets/icons/curriculum-logos/business-cv-curriculum-logo.svg"
+              alt="Ver Curriculo">
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <aside class="aside">
+      <nav class="aside__nav">
+        <ul class="aside__nav__list">
+          <li class="aside__list__item">
+            <button class="aside__nav__button">
+              <a href="#presentation">Sobre mi</a></li>
+          </button>
+          <li class="aside__list__item">
+            <button class="aside__nav__button">
+              <a href="#skills">Skills</a></li>
+          </button>
+          <li class="aside__list__item">
+            <button class="aside__nav__button">
+              <a href="#hobbies">Hobbies</a></li>
+          </button>
+          <li class="aside__list__item">
+            <button class="aside__nav__button">
+              <a href="#academic">Formación</a></li>
+          </button>
+          <li class="aside__list__item">
+            <button class="aside__nav__button">
+              <a href="#experience">Proyectos</a></li>
+          </button>
+          <li class="aside__list__item">
+            <button class="aside__nav__button">
+              <a href="#contact">Contacto</a></li>
+          </button>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section id="presentation">
+        <article class="presentation__container">
+          <img class="presentation__profile"
+            title="Foto de perfil de Wuilderman Berrios"
+            src="assets/img/profile.png"
+            alt="Foto de perfil de Wuilderman Berrios">
+          <div class="presentation__div">
+            <h2 class="presentation__bio">Wuilderman David Berrios Cárdenas</h2>
+            <h3 class="presentation__subsection">Desarrollador Front End -
+              Estudiante de Analisis y Desarrollo de Software</h3>
+          </div>
+        </article>
+      </section>
+
+      <section id="about">
         <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Hola, mi nombre es Wuilderman David Berrios Cárdenas, nacido el 29 de junio del 2005 en la ciudad de Caracas, Venezuela. Actualmente residente en la ciudad de Cali, Colombia. Soy estudiante de ultimo año en la Institución Educativa Técnica de Comercio Simón Rodríguez, y estudiante de programación, actualmente formandome en Front-End en Alura Latam.</p>
-            <p class="about__paragraph">Desde chico, siempre he sido un entusiasta de la tecnología. Me gusta mucho la musica, los juegos de estrategia y aprender cosas nuevas. Siempre busco dar lo mejor de mi en cada situación y pienso que querer aprender es el camino hacia el autosuperamiento.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <!-- <img src="assets\signature.png"> -->
+          <h3 class="about__title section__title">¿Quién soy?</h3>
+          <p class="about__paragraph">Hola, mi nombre es Wuilderman
+            David Berrios Cárdenas, nacido el 29 de junio del 2005
+            en la ciudad de Caracas, Venezuela. Actual residente
+            de la ciudad de Cali, Colombia.</p>
+          <p class="about__paragraph">Soy desarrollador web
+            Front End especializado en ReactJS.</p>
+          <p class="about__paragraph">Me gusta aprender
+            nuevas cosas y como fiel creyente del Lifelong Learning
+            (Aprendizaje a lo largo de la vida), siempre estoy
+            buscando expandir mi conociento.</p>
+          <p class="about__paragraph">Desde chico, siempre he sido un
+            entusiasta de la tecnología. Me gusta mucho la musica,
+            los juegos de estrategia y aprender cosas nuevas.
+            Siempre busco dar lo mejor de mi en cada situación y
+            pienso que querer aprender es el camino hacia el
+            autosuperamiento.</p>
+          <img class="about__signature"
+            src="assets/img/signature-wuilderman-berrios.png">
         </div>
-    </section>
+      </section>
 
-    <!-- Sección de Skills -->
-    <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
+      <section id="skills">
+        <h3 class="skills__title section__title">Skills</h3>
+        <ul class="skills__list">
+          <li class="skills__list__item">
+            <img class="skills__item__img" src="assets/img/htlm.png" alt>
+            <h4 class="skills__item__title">HTML 5</h4>
+            <h5 class="skills__item__description">
+              Lenguaje de maquetación web.</h5>
+            <p class="skills__item__knowledge">
+              Tengo conocimientos en etiquetas semánticas,
+              atributos, SEO y estructura de páginas web.</p>
+          </li>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
+          <li class="skills__list__item">
+            <img class="skills__item__img" src="assets/img/css_icon.png" alt>
+            <h4 class="skills__item__title">CSS</h4>
+            <h5 class="skills__item__description">
+              Lenguaje de estilización web.</h5>
+            <p class="skills__item__knowledge">
+              Se mucho sobre selectores, propiedades,
+              valores, estructura, variables, algunas pseudoclases,
+              flexbox, grid, etc.</p>
+          </li>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
+          <li class="skills__list__item">
+            <img class="skills__item__img" src="assets/img/js_icon.png" alt>
+            <h4 class="skills__item__title">Javascript</h4>
+            <h5 class="skills__item__description">
+              Principal lenguaje de programación
+              para la web.</h5>
+            <p class="skills__item__knowledge">
+              Se trabajar con variables, funciones, objetos, arrays,
+              condicionales, bucles, programación asíncrona,
+              consumo de datos, entre otros.</p>
+          </li>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
+          <li class="skills__list__item">
+            <img class="skills__item__img" src="assets/img/react_icon.png" alt>
+            <h4 class="skills__item__title">React</h4>
+            <h5 class="skills__item__description">
+              Framework de JavaScript para construir interfaces de usuario.</h5>
+            <p class="skills__item__knowledge">
+              Se mucho sobre componentes, estados, efectos, props, hooks,
+              contextos, rendimiento basico, routing, renderizado dínamico,
+              librerias, entre otras cosas más.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="hobbies">
+        <h3 class="hobbies__title section__title">Hobbies</h3>
+        <ul class="hobbies__list">
+          <li class="hobbies__list__item">
+            <img class="hobbies__item__img" src="assets/img/videogame_icon.png"
+              alt>
+            <h4 class="hobbies__item__title">
+              Jugar videojuegos</h4>
+            <p class="hobbies__item__description">
+              Me gustan los juegos de estrategia y esos en los que hay que
+              convertirse
+              en un magnate de la industria, jaja, me atrapan mucho estos
+              juegos.</p>
+          </li>
+
+          <li class="hobbies__list__item">
+            <img class="hobbies__item__img"
+              src="assets/img/programming_icon.png"
+              alt>
+            <h4 class="hobbies__item__title">
+              Programar</h4>
+            <p class="hobbies__item__description">
+              Actualmente lo hago como hobbie, pero en el futuro pienso
+              dedicarme a esto profesionalmente, actualmente estoy estudiando
+              para eso.</p>
+          </li>
+
+          <li class="hobbies__list__item">
+            <img class="hobbies__item__img" src="assets/img/headphones_icon.png"
+              alt>
+            <h4 class="hobbies__item__title">
+              Escuchar música</h4>
+            <p class="hobbies__item__description">
+              Me gusta mucho el Rock y la música Electronica, tambien escucho
+              algo de Pop. Mis bandas favoritas son The Neighbourhood
+              y Arctic Monkeys.</p>
+          </li>
+
+          <li class="hobbies__list__item">
+            <img class="hobbies__item__img" src="assets/img/tv_icon.png" alt>
+            <h4 class="hobbies__item__title">
+              Ver series</h4>
+            <p class="hobbies__item__description">
+              No soy mucho de ver series, pero cuando me
+              engancha alguna no puedo parar de verla.</p>
+          </li>
+
+          <li class="hobbies__list__item">
+            <img class="hobbies__item__img" src="assets/img/internet_icon.png"
+              alt>
+            <h4 class="hobbies__item__title">
+              Navegar por internet</h4>
+            <p class="hobbies__item__description">
+              Me gusta mucho explorar y aprender cosas nuevas, me gusta
+              ver videos y investigar sobre temas que me interesan.</p>
+          </li>
+
+          <li class="hobbies__list__item">
+            <img class="hobbies__item__img" src="assets/img/camera_icon.png"
+              alt>
+            <h4 class="hobbies__item__title">Tomar fotos</h4>
+            <p class="hobbies__item__description">
+              Desde siempre he tenido un gusto por la fotografia.
+              Actualmente no conozco mucho sobre este mundo, pero espero poder
+              conocerlo algun día.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="academic">
+        <h3 class="academic__title section__title">Formación académica</h3>
+        <ul class="academic__list">
+          <li class="academic__list__item">
+            <img class="academic__item__img"
+              src="assets/img/simon-rodriguez.png">
+            <h4 class="academic__item__title">
+              Bachiller Técnico Medio</h4>
+            <div class="academic__item__description">
+              <h4 class="academic__item__subtitle">
+                Institución Educativa Técnica de Comercio Simón Rodríguez</h4>
+              <p class="academic__item__place">
+                Cali, Colombia</p>
+              <small class="academic__item__date">
+                Diciembre, 2024</small>
+            </div>
+          </li>
+          <li class="academic__list__item">
+            <img class="academic__item__img" src="assets/img/alura_logo.png">
+            <h4 class="academic__item__title">
+              Certificado Desarrollo Web Front-End</h4>
+            <div class="academic__item__description">
+              <h4 class="academic__item__subtitle">
+                Alura Latam</h4>
+              <p class="academic__item__place">
+                Certificado Web</p>
+              <small class="academic__item__date">
+                Julio, 2024</small>
+            </div>
+          </li>
+          <li class="academic__list__item">
+            <img class="academic__item__img" src="assets/img/ponao.jpeg">
+            <h4 class="academic__item__title">
+              Bachiller Técnico Medio</h4>
+            <div class="academic__item__description">
+              <h4 class="academic__item__subtitle">
+                Politécnico Nacional De Artes y Oficios (PONAO)</h4>
+              <p class="academic__item__place">
+                Cali, Colombia</p>
+              <small class="academic__item__date">
+                Septiembre, 2024 - Actualidad</small>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h3 class="experience__title section__title">Experiencia
+          Profesional</h3>
+        <ul class="experience__list">
+          <li class="experience__list__item">
+            <img class="experience__item__img"
+              src="assets/img/juego_numero_secreto.png">
+            <div class="experience__item__info">
+              <h4 class="experience__info__title">
+                Juego del Número Secreto</h4>
+              <h5 class="experience__info__subtitle">
+                Formación Principiante en Programación con Alura</h5>
+              <div class="experience__info__description">
+                <button class="experience__button__repo experience__button">
+                  <a
+                    href="https://github.com/Wuildermoon/Juego-del-numero-secreto"
+                    target="_blank">
+                    Repositório</a>
+                </button>
+                <button class="experience__button__demo experience__button">
+                  <a
+                    href="https://wuildermoon.github.io/Juego-del-numero-secreto/"
+                    target="_blank">
+                    Ver demo</a>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="experience__list__item">
+            <img class="experience__item__img"
+              src="assets/img/encriptador_texto.png">
+            <div class="experience__item__info">
+              <h4 class="experience__info__title">
+                Encriptador de texto</h4>
+              <h5 class="experience__info__subtitle">
+                Challenge Oracle</h5>
+              <div class="experience__info__description">
+                <button class="experience__button__repo experience__button">
+                  <a
+                    href="https://github.com/Wuildermoon/Encriptador-de-texto"
+                    target="_blank">
+                    Repositório</a>
+                </button>
+                <button class="experience__button__demo experience__button">
+                  <a
+                    href="https://wuildermoon.github.io/Encriptador-de-texto/"
+                    target="_blank">
+                    Ver demo</a>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="experience__list__item">
+            <img class="experience__item__img"
+              src="assets/img/aluraplay_css.png">
+            <div class="experience__item__info">
+              <h4 class="experience__info__title">
+                Alura PLay</h4>
+              <h5 class="experience__info__subtitle">
+                Formación Front-End con Alura</h5>
+              <div class="experience__info__description">
+                <button class="experience__button__repo experience__button">
+                  <a
+                    href="https://github.com/Wuildermoon/Alura-play"
+                    target="_blank">
+                    Repositório</a>
+                </button>
+                <button class="experience__button__demo experience__button">
+                  <a
+                    href="https://wuildermoon.github.io/Alura-play/"
+                    target="_blank">
+                    Ver demo</a>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h3 class="contact__title section__title">Contacto</h3>
+        <div class="contact__container">
+          <div class="contact__info">
+            <h4 class="contact__subtitle">¿Te interesa
+              contactarme?</h4>
+            <p class="contact__paragraph">Complete el siguiente
+              formulario y me contactare con usted lo
+              antes posible. </p>
+            <form class="contact__form" name="form"
+              action="https://formspree.io/f/xgegqbgv"
+              method="post">
+              <input class="contact__form__input" type="text"
+                name="name" placeholder="Nombre">
+              <input class="contact__form__input" type="email"
+                name="email" placeholder="E-mail">
+              <input class="contact__form__input" type="text"
+                name="subject" placeholder="Asunto">
+              <textarea class="contact__form__textarea" rows="5"
+                cols="40" id="message" name="message"
+                placeholder="Mensaje"></textarea>
+              <button type="submit"
+                class="contact__form__button">Enviar
+                mensaje</button>
+            </form>
+          </div>
+          <div class="contact__side">
+            <img class="contact__img"
+              src="assets/img/contact_image.gif">
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets/videogame_icon.png"></li>
-                        <li class="hobbies__name"> Jugar videojuegos</li>
-                    </ul>
-                </div>
+    <footer class="footer">
+      <small class="footer__text">
+        &copy Wuilderman Berrios Portafolio personal - 2025
+      </small>
+    </footer>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets/programming_icon.png" alt=""></li>
-                        <li class="hobbies__name">Programar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Oir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ver películas</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\internet_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Navegar por internet</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tomar fotos</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-        <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">    
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Formación en Desarrollo Web Front-End</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2024 - Alura</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profesional</h2>
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/juego_numero_secreto.png">
-            <div class="experience__info-container">
-                <h2 class="experience__title">Juego del Número Secreto</h2>
-                <h3 class="experience__text">Formación Principiante en Programación con Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo experience__button"><a href="https://github.com/Wuildermoon/Juego-del-numero-secreto" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo experience__button"><a href="https://wuildermoon.github.io/Juego-del-numero-secreto/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div> 
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/encriptador_texto.png">
-            <div class="experience__info-container">
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Oracle</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo experience__button"><a href="https://github.com/Wuildermoon/Encriptador-de-texto" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo experience__button"><a href="https://wuildermoon.github.io/Encriptador-de-texto/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/aluraplay_css.png">
-            <div class="experience__info-container">
-                <h2 class="experience__title">Alura PLay</h2>
-                <h3 class="experience__text">Formación Front-End con Alura</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo experience__button"><a href="https://github.com/Wuildermoon/Alura-play" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo experience__button"><a href="https://wuildermoon.github.io/Alura-play/" target="_blank"><button class="experience__botao--demo" target="_blank">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-    </div>
-
-    <!-- Sección de Contacto -->
-    <section class="formcontato" id="contacto">
-        <div  class="formcontato__contacto">
-            <div class="formcontato--esquerda">
-                <img class="formcontato__img" src="assets/contact_image.gif">
-            </div>
-            <div class="formcontato__text">
-                <h2 class="formcontato__title">Contacto</h2>
-                <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                <form class="formcontato__form" name="form" action="https://formspree.io/f/xgegqbgv" method="post">
-                    <input class="formcontato__input" type="text" name="name" placeholder="Nombre">
-                    <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                    <input class="formcontato__input" type="text" name="subject" placeholder="Asunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="message" name="message" placeholder="Mensaje"></textarea>
-                    <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Footer -->
-    <section class="footer">
-        <div class="footer__rodape">
-            <p>&copy Desarrollado por Wuilderman Berrios</p>
-            <p>2024</p>
-        </div>
-    </section>
-
- <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
-</body>
+    <script defer src="index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,115 @@
+#hobbies {
+  .hobbies__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+
+    .hobbies__list__item {
+      height: fit-content;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+      padding: 1rem;
+      background-color: var(--card-color-base);
+      border-radius: 1rem;
+      transition: all 0.2s ease-in-out;
+
+      .hobbies__item__img {
+        height: 5rem;
+        width: 5rem;
+        aspect-ratio: 1/1;
+        max-height: max-content;
+      }
+
+      .hobbies__item__title {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .hobbies__item__description {
+        font-size: calc(1vw + 0.6rem);
+        line-height: calc(1vw + 1rem);
+        position: absolute;
+        inset: 1rem;
+        margin: auto;
+        opacity: 0;
+        visibility: hidden;
+        scale: 0;
+      }
+
+      .hobbies__item__img,
+      .hobbies__item__title,
+      .hobbies__item__description {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .hobbies__list__item:hover,
+    .hobbies__list__item:focus {
+      background-color: var(--card-color-hover);
+      .hobbies__item__img,
+      .hobbies__item__title {
+        opacity: 0;
+        scale: 0;
+        visibility: hidden;
+      }
+
+      .hobbies__item__description {
+        opacity: 1;
+        scale: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media (width > 515px) {
+  #hobbies {
+    .hobbies__list {
+      .hobbies__list__item {
+        .hobbies__item__description {
+          font-size: calc(1vw + 0.4rem);
+          line-height: calc(1vw + 0.8rem);
+        }
+      }
+    }
+  }
+}
+
+@media (width > 768px) {
+  #hobbies {
+    .hobbies__list {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
+}
+
+@media (width > 1011px) {
+  #hobbies {
+    .hobbies__list {
+      .hobbies__list__item {
+        .hobbies__item__description {
+          font-size: calc(1vw + 0.2rem);
+          line-height: calc(1vw + 0.6rem);
+        }
+      }
+    }
+  }
+}
+
+@media (width > 1024px) {
+  #hobbies {
+    .hobbies__list {
+      grid-template-columns: repeat(3, minmax(15rem, 1fr));
+    }
+  }
+}

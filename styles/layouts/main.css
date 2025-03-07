@@ -1,0 +1,50 @@
+.main {
+  max-height: 100%;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 0.5rem;
+
+  & section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.5rem;
+    border-radius: 2rem;
+
+    .section__title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &:nth-child(odd) {
+      background-color: var(--background-secondary);
+    }
+  }
+
+  & img {
+    width: 200px;
+  }
+}
+
+@media (width > 768px) {
+  .main {
+    padding: 1rem;
+    gap: 1rem;
+
+    & section {
+      padding: 2rem;
+
+      .section__title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
